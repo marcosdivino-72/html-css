@@ -38,7 +38,8 @@ div{
 
 header{
      margin: 0;
-     height: 200px;
+     padding-top: 40px;
+     min-height: 150px;
   
      background-image: linear-gradient(#247F4C,#22ac5e);
 }
@@ -52,15 +53,19 @@ header> p {
 
    margin: 10px;
     color: white;
-    font-size: 13px;
+    font-size: 11px;
     text-align: center;
+}
+nav{
+    padding: 10px 0 0 0;
 }
 nav >a {
     color: #ececec;
    
     font-weight: 700;
     text-decoration: none;
-    padding: 10px;
+   padding: 2px;
+    
    border-radius: 2px;
     
    
