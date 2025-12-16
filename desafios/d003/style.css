@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Asset&display=swap');
+@font-face {
+    font-family: android;
+    src: url(../d003/pacote-projeto-d010/fontes/idroid.otf) format("opentype");
+}
+
+:root{
+    --cor0:#c5ebd6;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: monospace;
+    margin: 0;
+}
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+     background-color: rgb(232, 233, 164);
+    
+     
+}
+div{
+    background-color: white;
+    padding: 15px;
+    margin: auto;
+    max-width: 800px;
+    min-width: 20px;
+}
+
+header{
+     margin: 0;
+     height: 120px;
+  
+     background-image: linear-gradient(#247F4C,#22ac5e);
+}
+header >h1  {
+   
+    text-align: center;
+  color: white;
+    
+}
+header> p {
+
+   margin: 10px;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+nav >a {
+    color: #ececec;
+   
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px;
+   border-radius: 2px;
+    
+   
+    
+}
+    a:hover{
+    color: white;
+    background-color:#155730;
+    transition-duration: 0.5s;
+    
+}
+main{
+  margin: 0 20px 0 20px;
+}
+main > p{
+     padding: 10px 0 10px 0;
+  
+}
+main >h1{
+    font-family: 'android';
+}
+img{
+    width: 100%;
+}
+#img-center{
+   text-align: center;
+}
+.center{
+   
+    background-color: #155730;
+    
+   
+    
+   
+   
+}
+h2{
+    background-color: #22ac5e;
+    width: 100%;
+    color: white;
+    
+}
+aside{
+    width: 100%;
+     background-color: #aeecc9;
+     border-radius: 10px;
+}
+aside >ul{
+    list-style-position: inside;
+    list-style: none;
+    columns: 2;
+    margin: 10px;
+}
+abbr{
+    text-decoration: underline;
+}
+p{
+    margin: 10px;
+    margin-top: 20px;
+    text-indent: 15px;
+}
+footer{
+    text-align: center;
+    background-color: #155730;
+    color: white;
+}
+

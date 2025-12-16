@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+  
+body{
+    background-image: linear-gradient(180deg ,#594328,#8C6E49);
+    background-attachment: fixed;
+    
+  
+   font-family: "Lavishly Yours", cursive;
+
+
+
+}
+main{
+    background-color: aliceblue;
+    border-radius: 50px;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(73, 60, 34, 0.658);
+
+}
+p{
+    text-align: justify;
+}
+h1{
+   text-align: center;
+   color: #BFAE8E;
+   margin: auto;
+}
+h2{
+    color:#F2DDB6;
+}
