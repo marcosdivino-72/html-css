@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela02</title>
+    <style>
+        body{
+            font-family:  Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td ,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead,tfoot{
+            background-color: gray;
+        }
+        .num{
+            text-align: right;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead><tr>
+            <th>Estado</th>
+            <th>População</th>
+        </tr></thead>
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">46 081 801</td>
+                
+            </tr>
+            <tr> <td>Minas gerais 
+                <td class="num">21 393 441</td>
+
+            </td>
+            <tr> <td>Rio de janeiro</td>
+                <td class="num">17 223 547</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>total de população</th>
+                <th class="num">00 000 000</th>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
