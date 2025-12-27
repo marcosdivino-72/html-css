@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output</title>
+</head>
+<body>
+    <form action="">
+
+     <label for="n1">Numero1</label><input type="number" name="n1" id="ne" oninput="soma.innerHTML = Number(n1.value)" ><br>
+     <label for="n2" >Numero2</label><input type="number" name="n2" id="n2"  oninput="soma.innerHTML = Number(n1.value) +Number(n2.value)"><br>
+     Soma <output id="soma"></output>
+     <br><br><br><br>
+     <input type="range" name="" id="n3"max="10" oninput="val.innerHTML=Number(n3.value)">
+     
+     <output id="val">5</output>
+     <br><br><br><br>
+     <label for="ano">Em que ano você nasceu?</label> <input type="number" name="ano" id="ano" min="1900" max="2025" value="2000" oninput="sano.innerHTML=2025- Number(ano.value)">
+     <p>Sua idade e: <output id="sano">25</output> anos</p>
+
+
+
+    </form>
+
+</body>
+</html>
