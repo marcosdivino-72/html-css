@@ -29,13 +29,14 @@ main{
 #login{
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 530px;
     position: relative;
      top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+  
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.61);
+      transform: translate(-50%,-50%);
     
 
 }
@@ -52,11 +53,64 @@ main{
 p{
     font-size: 0.8em;
 }
-#face{
+.i{
     position: relative;
-    top:7px
+   
+      width: 40px;
+    
+      height: 100%;
+      border-radius: 5px;
+   
 }
-#chave{
-    position: relative;
-    top:7px;
+
+#enviar{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #49a09d ;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  
+}
+#enviar:hover{
+    background-color: #39706e ;
+    
+}
+#qsenha{
+     margin-top: 10px;
+ width: 100%;
+  height: 40px;
+  background-color: #5b7ae0 ;
+  border: none;
+   border-radius: 5px;
+   cursor: pointer;
+     color: white;
+}
+.campo{
+
+   background-color: #5f2c82;
+   margin: 5px 0; 
+   height: 40px;
+   border-radius: 5px;
+   
+   
+}
+.campo > input{
+
+    width: calc(100% - 45.1px);
+    height: 38px;
+    border-radius: 8px;
+   
+    border: none;
+     transform: translateY(-15px);
+}
+.campo > input:focus-within{
+
+   
+    border: none;
+}
+label{
+    display: none;
 }
