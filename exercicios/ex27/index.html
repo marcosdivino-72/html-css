@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box</title>
+    <STyle>
+        body{
+            overflow-y: hidden;
+        }
+        .conteiner{
+            background-color: blueviolet;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 300px;
+
+        }
+        .itens{
+
+            background-color: blue;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            flex: auto;
+            padding: 10px;
+            text-align: center
+        }
+    </STyle>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="itens">A</div>
+         <div class="itens">B</div>
+          <div class="itens">C</div>
+           <div class="itens">D</div>
+            <div class="itens">f</div>
+             <div class="itens">g</div>
+
+    </div>
+    
+</body>
+</html>
