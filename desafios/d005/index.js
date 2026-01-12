@@ -1,16 +1,16 @@
 
 
-let menuOn=false
-let n = getElementById("svg")
+let menuOn = false;
+let n = document.getElementById("svg")
 
-
+let menu =document.getElementById("menu")
+ let body =document.getElementById("body")
 
 function on(){
 
 if(menuOn==false){
 
- let menu =document.getElementById("menu")
- let body =document.getElementById("body")
+ 
    menu.style.display="block";
    menuOn=!menuOn
    menu.style.width="60vw";
@@ -31,15 +31,17 @@ function off(){
      menu.style.display="none";
      
 }
-function menuoff(){
-    
-    if(n.display==none){
 
 
-  menu.style.display="none";
-  alert("ll")
 
+setInterval(() => {
+  if (window.innerWidth>765){
 
-    }
-
-}
+   menu.style.display="none";
+      menuOn=!menuOn
+        body.style=" overflow-y: scroll "
+         menu.style.width="10vw";
+  }
+   
+  
+},1);
