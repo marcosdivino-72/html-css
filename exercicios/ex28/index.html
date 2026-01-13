@@ -6,11 +6,14 @@
     <title>flex_box</title>
 
     <style>
-       
+       *{
+        box-sizing: content-box;
+       }
         .filha{
            
          
            border: solid 1px;
+          
            background-color: blueviolet;
            text-align: center;
           
@@ -19,21 +22,35 @@
         }
          #conten{
          display: flex;
-         flex-direction: row;
-         flex-wrap: wrap;
-         justify-content: center;
-        }
+          flex-flow: row wrap;
+         justify-content: flex-start;
+     
+       
+        align-content: flex-start;
+        gap: 100PX;
+         
+         background-color: rgb(19, 18, 18);
+         height: 600px;
+
+         }
+      
     </style>
 </head>
 <body>
 
 
     <div id="conten">
-        <div class="filha">a flex_bovdvdvdvdx gfgfg</div>
-        <div><h2>Lorue, fugiat dvdvdvdvdvdvdvdvdvdvdvvdvvdvdvdvdvdvdvdvdvdvdvdvdvdvdvdvdmpore?</h2></div>
+        <div class="filha">1-----G---JJJJJJJJJJJJJJJJJJJJJJ---</div>
+        <div class="filha">2-------JJJJJJJJJJJJJJJJJJJJJ----</div>
+        <div class="filha">3--------JJJJJJJJJJJJJJJJJJJJJJJJ---</div>
+      
+       
+      
+         
          
         
     </div>
+   
     
 </body>
 </html>
