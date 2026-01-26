@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+     list-style-type: none;
+
+}
+:root{
+--color-neutro-0: #ffffff;
+--color-neutro-1: #eee4db;
+--color-neutro-2: #d4c3b6;
+--color-neutro-3: #b8a99e;
+--color-neutro-4: #9e8f85;
+--color-neutro-5: #7e6e65;
+--color-neutro-6: #5e4e45;
+--color-neutro-7: #3e2e25;
+--color-neutro-8: #1e0e05;
+--color-neutro-9: #000000;
+
+--color-primary-1: #34815d;
+--color-primary-2: #2c6e4f;
+--color-primary-3: #245c42;
+
+--color-secondary-1: #f5c518;
+}
+  #btn-mobile{
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+header{
+    background-color: var(--color-neutro-1);
+    position: sticky;
+     padding: 12px 4%;
+
+}
+  .navbar{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+       
+      
+
+        .logo{
+            width: 180px;
+        }
+      
+        ul{
+
+            position: absolute;
+            width: 100%;
+            display: none;
+            flex-direction: column;
+            top: 80px;
+            left: 0;
+            background-color: var(--color-neutro-1);
+            &.show{
+                display: flex;
+            }
+
+            li{
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    color: var(--color-neutro-8);
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        color: var(--color-primary-1);
+                        border-bottom: 1px solid var(--color-primary-1);
+                    }
+                }
+            }
+        }
+        .defout{
+            display: none;
+            background-color: var(--color-primary-1);
+            text-decoration: none;
+            color: var(--color-neutro-0);
+            padding: 8px 12px;
+            border-radius: 5px;
+            &:hover{
+                background-color: var(--color-primary-2);
+            }
+        }
+
+    }
+    .btn{
+         background-color: var(--color-primary-1);
+            text-decoration: none;
+            color: var(--color-neutro-0);
+            padding: 8px 12px;
+            border-radius: 5px;
+            border: none;
+            &:hover{
+                background-color: var(--color-primary-2);
+            }
+
+    }
+    .btn-outlined{
+      background-color: transparent;
+            text-decoration: none;
+            color: var(--color-primary-1);
+            border: 2px solid var(--color-primary-1);
+            padding: 8px 12px;
+            border-radius: 5px;
+          
+            &:hover{
+                color: var(--color-neutro-0);
+                background-color: var(--color-primary-2);
+            }
+
+    }
+    #container{
+        display: flex;
+        
+        flex-direction: column;
+        background-image: url(images/background-mobile.png) ;
+        background-size: cover;
+        min-height: calc(100vh - 96px);
+        padding: 0 20px;
+        section{
+            padding-top: clamp(0px, 5vw, 32px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: clamp(300px, 50vw, 400px) ;
+            }
+            .home-title{
+                text-align: center;
+                text-transform: uppercase;
+                samp{
+                    color: var(--color-primary-1);
+                }
+              
+            }
+              .home-description{
+                 text-align: center;
+                }
+        }
+        .home-actions{
+            display: flex;
+            gap: 12px;
+            margin-top: 15px;
+            
+        }
+    }
+    @media (min-width: 700px){
+        
+        header{
+          
+        }
+            .navbar{
+               
+                #btn-mobile{
+                    display: none;
+                }
+                ul{
+                width: auto;
+                gap: 1rem;
+                    display: flex;
+                    position: static;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+
+                }
+                 .defout{
+            display:block;
+        }
+            }
+
+        
+       
+
+    }
