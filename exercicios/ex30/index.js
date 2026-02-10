@@ -111,7 +111,7 @@ window.addEventListener("load",()=>{
 
     const id = localStorage.getItem("id")
     
-    for(let i=1;i<id;i++){
+    for(let i=0;i<id;i++){
       
         l.criarCorpo(i)
        
