@@ -1,33 +1,76 @@
 let list = document.querySelector('.list');
 const btn = document.querySelector(".btn");
-const text = document.querySelector("#tafera")
+
+
+
+
 
 class ListaDeTarefas{
-    constructor(lista,btn,tarefa){
+    constructor(lista,btn){
         this.btn=btn;
         this.list = lista;
-        this.tarefa = tarefa
+        this.addBtn()
+      
+        
+
+    }
+    criarCorpo(){
+        const li = document.createElement("li")
+        const box = document.createElement("input")
+        const samp = document.createElement("samp")
+        //Elementos para criar a lista adicionado
+        box.type="checkbox"
+   box.id="check";
+         li.append(box);
+       li.innerHTML+=this.addTarefas()
+        samp.textContent="X"
+        li.append(samp)
+        this.list.append(li)
+ 
+       this.addEventoRemove()
+    }
+    addEventoRemove(){
+        const samp = document.querySelectorAll('samp')
+        samp.forEach((e)=>{
+               const p =e.parentNode
+               if(p.parentElement==this.list){
+                e.addEventListener("click",this.remove_list.bind())
+               }
+        })
 
     }
     addTarefas(){
-       const p = document.createElement("p");
-     
+        const tarefa = document.querySelector("#tarefa").value;
+       return  tarefa ;
+
+  }
+    remove_list(e){
+       e.target.parentElement.remove()    
     }
     addBtn(){
-        this.btn= addEventListener("click",this.addTarefas);
+        this.btn.addEventListener("click",()=>{
+               const tarefa = document.querySelector("#tarefa").value; 
+               if(tarefa!=""){
+                  this.criarCorpo()
+               }else{
+                alert("Tarefa vazia")
+               }
+         
+         
+            
+        }
+        );
+      
     }
 
 }
 
-l = new ListaDeTarefas(list,btn,text)
-l.addBtn()
- let p = document.createElement("p").innerHTML="ola"
-let pi = document.createElement("p").innerHTML="ola";
-let piu = document.createElement('div').innerHTML="ola"
- 
-  list.append(p)
-  list.append(pi)
-  list.append(piu)
+l = new ListaDeTarefas(list,btn)
+
+
+l.addEventoRemove()
+
+  
  
 
 
