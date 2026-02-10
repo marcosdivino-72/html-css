@@ -49,6 +49,7 @@ class ListaDeTarefas{
         this.list.append(li)
  
        this.addEventoRemove()
+        document.querySelector("#tarefa").value="";
     }
     addBancoDeDados(tarefa,id){
         localStorage.setItem("id",+localStorage.getItem("id")+1)
@@ -73,6 +74,7 @@ class ListaDeTarefas{
          }
      else{
         const tarefa = document.querySelector("#tarefa").value;
+        
 
        return  tarefa ;
      }
