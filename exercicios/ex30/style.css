@@ -44,6 +44,7 @@ body{
         }
         #check{
             margin-right: 10px;
+            width: auto;
         }
         samp{
             position: absolute;
@@ -64,7 +65,7 @@ body{
         }
         input{
             padding: 5px;
-            width: 250px;
+           width: 250px;
             &:focus{
                 outline: none;
                 border:solid 1px greenyellow ;

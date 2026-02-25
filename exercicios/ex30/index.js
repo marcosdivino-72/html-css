@@ -28,12 +28,12 @@ class ListaDeTarefas{
             }
         }
         const li = document.createElement("li")
-      //  const box = document.createElement("input")
+      const box = document.createElement("input")
         const samp = document.createElement("samp")
         //Elementos para criar a lista adicionado
-      //  box.type="checkbox"
-  // box.id="check";
-    //     li.append(box);
+     box.type="checkbox"
+  box.id="check";
+      li.append(box);
      if(id!=undefined){  li.innerHTML+=this.addTarefas(id)
 
         li.id=id
